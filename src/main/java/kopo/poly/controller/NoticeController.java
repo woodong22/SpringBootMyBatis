@@ -43,14 +43,14 @@ public class NoticeController {
         return "notice/noticeList";
     }
 
-    @GetMapping(value = "noticeReq")
-    public String noticeReq() {
+    @GetMapping(value = "noticeReg")
+    public String noticeReg() {
 
-        log.info("{}.noticeReq Start!", this.getClass().getName());
+        log.info("{}.noticeReg Start!", this.getClass().getName());
 
-        log.info("{}.noticeReq End!", this.getClass().getName());
+        log.info("{}.noticeReg End!", this.getClass().getName());
 
-        return "notice/noticeReq";
+        return "notice/noticeReg";
 
     }
 

@@ -1,0 +1,25 @@
+package kopo.poly.dto;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serializable;
+import java.util.List;
+
+@Getter
+@Setter
+@JsonInclude(JsonInclude.Include.NON_DEFAULT)
+public class WeatherDTO implements Serializable {
+
+    private String lat; // 위도
+
+    private String lon; // 경도
+
+    private double currentTemp; // 현재기온
+
+    // 현재로부터 7일동안 일자별 날씨
+
+    private List<WeatherDailyDTO> dailyList;
+
+}

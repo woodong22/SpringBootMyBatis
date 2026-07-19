@@ -36,7 +36,7 @@ public class NoticeService implements INoticeService {
     @Override
     @Transactional
     public void insertNoticeInfo(NoticeDTO pDTO) throws Exception {
-        log.info("{}.InsertNotice start!", this.getClass().getName());
+        log.info("{}.insertNotice start!", this.getClass().getName());
         noticeMapper.insertNoticeInfo(pDTO);
     }
 
