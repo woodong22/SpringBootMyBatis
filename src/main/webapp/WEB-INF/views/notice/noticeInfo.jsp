@@ -5,6 +5,8 @@
 <%
     // NoticeController 함수에서 model 객체에 저장된 값 불러오기
     NoticeDTO rDTO = (NoticeDTO) request.getAttribute("rDTO");
+    String nSeq = CmmUtil.nvl(request.getParameter("nSeq")); // 공지글번호(PK)
+    System.out.println(nSeq);
 %>
 <!DOCTYPE html>
 <html lang="en">

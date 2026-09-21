@@ -28,7 +28,7 @@ public class OcrController {
 
     private final IOcrService ocrService;
 
-    // 업로드되는 파일이 저장되는 기본폴더 설정( 자바에서 경로는 /로 표현함)
+    // 업로드되는 파일이 저장되는 기본폴더 설정 (자바에서 경로는 /로 표현함)
     final private String FILE_UPLOAD_SAVE_PATH = "c:/upload";
 
     /**

@@ -21,6 +21,10 @@ public class MailService implements IMailService {
     @Value("${spring.mail.username}")
     private String fromMail;
 
+//    public MailService(JavaMailSender mailSender) {
+//        this.mailSender = mailSender;
+//    }
+
     @Override
     public int doSendMail(MailDTO pDTO) {
         log.info("{}.doSendMail start!", this.getClass().getName());

@@ -1,10 +1,11 @@
 package kopo.poly.mapper;
 
 import kopo.poly.dto.MovieDTO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
-//@Mapper
+@Mapper
 public interface IMovieMapper {
 
     // 수집된 영화 순위 DB에 등록하기
